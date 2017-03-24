@@ -1,0 +1,29 @@
+
+<!-- saved from url=(0039)http://172.16.1.252/disable/disable.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta id="viewport" name="viewport" content="width=device-width; initial-scale=0.9; maximum-scale=2.0; minimum-scale=0.9;">
+
+<title>URL过滤</title>
+<link href="./terminal.css" rel="stylesheet" type="text/css">
+<script>
+function init()
+{ 
+	var url = window.location.href;
+	if (window.top != window && url.indexOf("preview")===0)
+	{
+		var url = "/disable/disable.htm"; 
+		window.top.location.href=url;
+	}
+}
+init();
+</script>
+</head>
+
+<body onload="init()">
+<div id="content">
+  <h1 class="warning">访问被拒绝</h1>
+  <div class="partition"> <span class="partition_left" style="width:150px;"></span> </div>
+  <p class="b_distance">依据组织的上网权限策略，您尝试访问的网站已经被拒绝。如果有疑问，请联系网络管理员。</p>
+</div>
+
+</body></html>
